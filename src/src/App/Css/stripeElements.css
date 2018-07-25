@@ -1,0 +1,182 @@
+.stripeElements {
+  background-color: #fff;
+}
+
+.stripeElements * {
+  font-family: 'noto_sansregular';
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.stripeElements .row {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0px 15px;position: relative;
+}
+
+.stripeElements .field {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 0 10px;
+}
+
+.stripeElements .field.half-width {
+  width: 50%;
+}
+
+.stripeElements .field.quarter-width {
+  width: calc(25% - 10px);
+}
+
+.stripeElements .baseline {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  background-color: #cfd7df;
+  transition: background-color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.stripeElements label {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 8px;
+  color: #cfd7df;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transform-origin: 0 50%;
+  cursor: text;
+  transition-property: color, transform;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.stripeElements .input {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding-bottom: 7px;
+  color: #32325d;
+  background-color: transparent;font-family: 'noto_sansregular';
+}
+
+.stripeElements .input::-webkit-input-placeholder {
+  color: transparent;
+  transition: color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);font-family: 'noto_sansregular';
+}
+
+.stripeElements .input::-moz-placeholder {
+  color: transparent;
+  transition: color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);font-family: 'noto_sansregular';
+}
+
+.stripeElements .input:-ms-input-placeholder {
+  color: transparent;
+  transition: color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);font-family: 'noto_sansregular';
+}
+
+.stripeElements .input.StripeElement {
+  opacity: 0;
+  transition: opacity 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  will-change: opacity;
+}
+
+.stripeElements .input.focused,
+.stripeElements .input:not(.empty) {
+  opacity: 1;
+}
+
+.stripeElements .input.focused::-webkit-input-placeholder,
+.stripeElements .input:not(.empty)::-webkit-input-placeholder {
+  color: #cfd7df;
+}
+
+.stripeElements .input.focused::-moz-placeholder,
+.stripeElements .input:not(.empty)::-moz-placeholder {
+  color: #cfd7df;
+}
+
+.stripeElements .input.focused:-ms-input-placeholder,
+.stripeElements .input:not(.empty):-ms-input-placeholder {
+  color: #cfd7df;
+}
+
+.stripeElements .input.focused + label,
+.stripeElements .input:not(.empty) + label {
+  color: #aab7c4;
+  transform: scale(0.85) translateY(-25px);
+  cursor: default;
+}
+
+.stripeElements .input.focused + label {
+  color: #858585;
+}
+
+.stripeElements .input.invalid + label {
+  color: #a94442;
+}
+
+.stripeElements .input.focused + label + .baseline {
+  background-color: #66afe9;
+}
+
+.stripeElements .input.focused.invalid + label + .baseline {
+  background-color: #a94442;
+}
+
+.stripeElements input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border-style: none;
+}
+
+.stripeElements input:-webkit-autofill {
+  -webkit-text-fill-color: #e39f48;
+  transition: background-color 100000000s;
+  -webkit-animation: 1ms void-animation-out;
+}
+
+.stripeElements .StripeElement--webkit-autofill {
+  background: transparent !important;
+}
+
+
+
+.stripeElements input:active {
+  background-color: #66afe9;
+}
+
+.stripeElements .btn.btn-default {
+  line-height: 30px;
+}
+
+.stripeElements .brand {
+  padding-top: 20px;
+  position: absolute;
+  right: 5px;
+  top: 0;
+}
+
+
+.form-footer-strip{ text-align:right;    margin-left: 10px;  margin-right: 10px;
+  position: relative; }
+.visible-xs2{ display: none;}
+.logo-stripe{ position: absolute; max-width: 120px; top:5px; left: 0px;}
+.form-stripe h1{display: none;}
+.form-stripe .logo-login {  margin-bottom: 15px;}
+.footer{ position: relative;    text-align: center;    color: #204c87;}
+.alert{    padding: 10px 3px 5px 10px;}
+
+@media(max-width:479px){
+  .visible-xs2{ display: block;}
+  .form-footer-strip img{float:none !important; display: inline-block; margin-bottom: 5px;}
+  .form-footer-strip{ text-align:center;  }
+  .logo-stripe{ position: relative; max-width: inherit; top:15px; left: 0px;}
+}

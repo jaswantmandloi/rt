@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'noto_sansbold';
+    src: url('../fonts/notosans-bold/notosans-bold-webfont.eot');
+    src: url('../fonts/notosans-bold/notosans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/notosans-bold/notosans-bold-webfont.woff2') format('woff2'),
+         url('../fonts/notosans-bold/notosans-bold-webfont.woff') format('woff'),
+         url('../fonts/notosans-bold/notosans-bold-webfont.ttf') format('truetype'),
+         url('../fonts/notosans-bold/notosans-bold-webfont.svg#noto_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'noto_sansregular';
+    src: url('../fonts/notosans-regular/notosans-regular-webfont.eot');
+    src: url('../fonts/notosans-regular/notosans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/notosans-regular/notosans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/notosans-regular/notosans-regular-webfont.woff') format('woff'),
+         url('../fonts/notosans-regular/notosans-regular-webfont.ttf') format('truetype'),
+         url('../fonts/notosans-regular/notosans-regular-webfont.svg#noto_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'noto_sansitalic';
+    src: url('../fonts/notosans-italic/notosans-italic-webfont.eot');
+    src: url('../fonts/notosans-italic/notosans-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/notosans-italic/notosans-italic-webfont.woff2') format('woff2'),
+         url('../fonts/notosans-italic/notosans-italic-webfont.woff') format('woff'),
+         url('../fonts/notosans-italic/notosans-italic-webfont.ttf') format('truetype'),
+         url('../fonts/notosans-italic/notosans-italic-webfont.svg#noto_sansitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+body{background: #C2DDF8; padding: 0px; margin: 0px; font-family: 'noto_sansregular'; color: #858585;}
+.header-logo{ background: #104C88; text-align: center;margin-bottom: 0px !important;}
+
+a{ color: #104C88;}
+a:focus{ outline: none;}
+
+h1{ color: #515151; font-size: 27px;  font-family: 'noto_sansbold';}
+h2{color: #515151; font-size: 24px;font-family: 'noto_sansregular';margin-bottom: 18px; }
+
+.btn-primary, .btn-secondary{ background: #104C88; border-radius: 0px; cursor: pointer; border: none; font-size: 16px;line-height: 30px;}
+.btn-secondary{  background: #AEAEAE;}
+.btn-primary + .btn { margin-left: 13px;}
+.btn2{ width: 120px;padding-top: 9px;padding-bottom: 6px;}
+
+.font-bold{ font-family: 'noto_sansbold'; }
+.form-row2 {margin-bottom: 40px;padding-bottom: 25px; position: relative;}
+.form-row2::after{ content: ""; height: 1px; background:#D6D6D6; width: 97%; bottom: 0px; left:0px; right: 0px; margin: auto; position: absolute;}
+
+
+.form-signin {  width: 100%;  max-width: 500px;  padding: 0px;  /*margin: 20px auto auto auto;*/	box-shadow: 0px 0px 4px 1px rgb(0,0,0,.35); background: #fff;}
+.form-signin-container { display: -ms-flexbox;  display: -webkit-box;  display: flex;  -ms-flex-align: center;  -ms-flex-pack: center;  -webkit-box-align: center;
+  align-items: center;  -webkit-box-pack: center;  justify-content: center; height: 100%;}
+.form-body{ padding: 36px 62px;}
+
+.form-footer2{border-top: 1px solid #D6D6D6;margin-top: 40px;padding-top: 40px;}
+.form-check-inline{margin-right: 50px;}
+
+.inner-container{ max-width: 1110px !important;margin: 50px auto;}
+.inner-container .form-body {padding: 30px 45px 36px 45px;}
+
+
+.heading-margin{ margin-bottom: 20px;}
+.login-marb{margin-bottom:40px;}
+
+
+.card-plan{box-shadow: 0px 0px 3px 1px rgb(0,0,0,.25); border-radius:0px; text-align:center;border: none; color: #515151;}
+.card-plan .card-text{ line-height: 16.8px;font-size: 14px;margin-bottom: 49px;}
+.card-plan .card-title {font-size: 16px;margin-bottom: 22px;}
+.card-plan .card-title b{  font-family: 'noto_sansbold'; font-size: 26px;}
+.card-plan .card-body{padding: 35px 15px 18px 15px;}
+
+.card-header-bronze, .card-header-gray, .card-header-gold{background: #935B24; color: #fff; border-radius:0px !important;border: none;}
+.card-header-gray{ background: #C0C0C0;}
+.card-header-gold{ background: #CFB53B;}
+.card-header{font-family: 'noto_sansbold';line-height: 30px;}
+
+
+.listing-bold li {    font-size: 20px;    color: #515151;    font-family: 'noto_sansregular';}
+.listing-bold li p {    font-size: 16px;}
+.listing-bold .list-small li{    font-size: 16px;}
+.point-view li {    margin-bottom: 10px;}
+.mr-10 {    margin-right: 10px;}
+
+.list-small li {
+    margin-bottom: 10px;
+}
+.alert{    padding: 10px 3px 5px 10px;}
+
+.footer{ position: relative;bottom: -30px;    text-align: center;    color: #204c87;}
+
+@media(max-width:1199px){
+	.inner-container {max-width: 97% !important; }
+}
+
+@media(max-width:991px){
+.inner-container .form-body {padding: 30px 25px 36px 25px;}
+.card-header{padding: 10px 0px;}
+}
+
+
+@media(max-width:767px){
+	.card-plan{margin-bottom: 20px;}
+	.card-plan .card-text{margin-bottom: 30px;}
+	.form-signin-container{ display:inherit;}		
+	.form-signin{max-width: 95%; margin:0px auto 40px auto;}
+	.form-body{ padding: 36px 30px;}
+	.form-check-inline + .form-check-inline {margin-left: 5px; margin-right: 0px;} 
+	[type="radio"]:checked + label{padding-left: 20px;}
+	.form-check-inline{margin-right: 0px;}
+	.lh-sm{line-height: 21px;}
+	.form-footer2{margin-top: 20px;padding-top: 30px;}
+	.form-row2::after{width: 93%;}
+}
+@media(max-width:479px){
+	.form-body {    padding: 36px 20px;}
+	.forgot-password{ margin-top: 50px;}
+	.form-row2::after{width: 90%;}
+}
